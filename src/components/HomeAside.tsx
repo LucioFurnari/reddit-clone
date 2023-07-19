@@ -5,7 +5,8 @@ import Image from "next/image"
 
 function HomeAside () {
   return (
-    <aside className=" w-[270px] bg-[#1a1a1b]">
+    <aside className="w-[270px] bg-[#1a1a1b] min-h-[calc(100vh-50px)] flex flex-col justify-between">
+      <div>
         <ul className="py-4 ">
           <h3 className="pl-2 mb-2 text-xs">FEEDS</h3>
           <li>
@@ -22,7 +23,7 @@ function HomeAside () {
           </li>
         </ul>
         <ul>
-          <h3 className="pl-2 mb-2 text-xs">RECENT</h3>
+          <h3 className="pl-2 mb-2 text-xs mt-4">RECENT</h3>
           <li>
             <a className="flex items-center hover:bg-[#232324] p-2">
               <Image className="w-6 h-auto" src={PlaceholderImage} alt={"Community image"} />
@@ -37,7 +38,7 @@ function HomeAside () {
           </li>
         </ul>
         <ul>
-          <h3 className="pl-2 mb-2 text-xs">TOPICS</h3>
+          <h3 className="pl-2 mb-2 text-xs mt-4">TOPICS</h3>
           <li>
             <button className="flex items-center w-full hover:bg-[#232324] p-2">
               <MaterialSymbolsStadiaControllerOutline />
@@ -67,6 +68,8 @@ function HomeAside () {
             </button>
           </li>
         </ul>
+      </div>
+      <AsideJoinSection />
       </aside>
   )
 }
@@ -114,5 +117,16 @@ function SolarStarCircleLinear(props: SVGProps<SVGSVGElement>) {
 function IcRoundKeyboardArrowDown(props: SVGProps<SVGSVGElement>) {
   return (
     <svg className="w-6 h-auto ml-auto" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"></path></svg>
+  )
+}
+
+function AsideJoinSection () {
+  return (
+    <div className="p-5">
+      <p className="text-sm">
+        Create a account to follow your favorite communities and start taking part in conversations.
+      </p>
+      <button className="bg-[#ff4500] hover:bg-[#ff5415] text-[#ffffff] w-full py-2 text-center my-6 rounded-full font-semibold">Join Reddit</button>
+    </div>
   )
 }
