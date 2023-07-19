@@ -1,8 +1,11 @@
+import HomeAside from "@/components/HomeAside"
+import MainSection from "@/components/MainSection"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
-    </main>
+    <div className=" flex">
+      {true && <HomeAside />}
+      <MainSection />
+    </div>  
   )
 }
