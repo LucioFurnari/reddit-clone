@@ -5,7 +5,7 @@ import Image from "next/image"
 
 function HomeAside () {
   return (
-    <aside className="w-[270px] bg-[#1a1a1b] min-h-[calc(100vh-50px)] flex flex-col justify-between">
+    <aside className="w-[270px] bg-[#1a1a1b] min-h-[calc(100vh-52px)] flex flex-col justify-between px-4">
       <div>
         <ul className="py-4 ">
           <h3 className="pl-2 mb-2 text-xs">FEEDS</h3>
@@ -122,7 +122,7 @@ function IcRoundKeyboardArrowDown(props: SVGProps<SVGSVGElement>) {
 
 function AsideJoinSection () {
   return (
-    <div className="p-5">
+    <div>
       <p className="text-sm">
         Create a account to follow your favorite communities and start taking part in conversations.
       </p>
