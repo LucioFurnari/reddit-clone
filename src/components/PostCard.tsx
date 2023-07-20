@@ -20,7 +20,7 @@ function PostCard (props: { votes: number, community: string, user: string, time
           <span className="text-xs text-[#77797a]">•</span>
           <span className="text-xs text-[#77797a] ml-2">Posted by {`u/${props.user} ${props.time_passed} hours ago`}</span>
         </div>
-        <h2 className="px-2 mb-4">{props.title}</h2>
+        <h2 className="px-2 mb-4 text-xl">{props.title}</h2>
         <Image src={props.content} alt={"Placeholder image"}/>
         <div className="px-2">
           <button className="p-2 text-xs text-[#6d6e6f] hover:bg-[#272729]">
