@@ -1,4 +1,5 @@
 import { SVGProps } from "react"
+import UserMenuOffline from "./nav_menus/UserMenuOffline"
 
 function Nav () {
   return (
@@ -13,12 +14,13 @@ function Nav () {
         <PhMagnifyingGlassLight />
         <input className=" bg-inherit text-sm  w-full ml-1 outline-none " placeholder="Search Reddit"></input>
       </fieldset>
-      <div className="flex justify-end items-center">
+      <div className="flex justify-end items-center relative">
         <button className="bg-[#ff4500] hover:bg-[#ff5415] text-[#ffffff] px-10 py-1 text-center  rounded-full font-semibold">Log In</button>
-        <button className="flex items-center ml-5 py-1 px-2 rounded-md border-[1px] border-transparent hover:border-[#323334]">
+        <button className="flex items-center ml-5 py-1 px-2 rounded-md border-[1px] border-transparent hover:border-[#323334] peer">
             <ClarityUserLine />
             <IcBaselineKeyboardArrowDown />
         </button>
+        <UserMenuOffline />
       </div>
     </nav>
   )
