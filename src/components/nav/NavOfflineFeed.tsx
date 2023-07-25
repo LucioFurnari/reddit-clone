@@ -3,7 +3,7 @@ import { SVGProps } from "react"
 function UserMenuOffline () {
   return (
     <div className="h-0 peer-focus:h-auto overflow-hidden absolute top-11 right-0 bg-[#1a1a1b] rounded-b-md peer-focus:border-[1px] border-b-[#343536] border-x-[#343536] border-t-transparent">
-      <button className="hover hover:bg-[#232324] p-2">
+      <button className="hover:bg-[#232324] p-2">
         <IcTwotoneLogIn />
         <span className="ml-2">Log In / Sign Up</span>
       </button>
@@ -38,9 +38,8 @@ function ClarityUserLine(props: SVGProps<SVGSVGElement>) {
   )
 }
 
-
 function IcBaselineKeyboardArrowDown(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg className="w-6 h-auto  block" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path></svg>
+    <svg className="w-6 h-auto inline" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"></path></svg>
   )
 }
