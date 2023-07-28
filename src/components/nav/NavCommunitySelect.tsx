@@ -10,7 +10,7 @@ function NavCommunitySelect () {
 
   return (
     <div className="mr-4 relative">
-      <button onClick={handleMenu} className="flex w-full justify-between items-center hover:border-[#323334] border-transparent border-[1px] rounded-md p-2">
+      <button onClick={handleMenu} className={`${menuActive ? 'border-[#323334] border-b-transparent rounded-t-md border-t-[1px]' : 'border-transparent rounded-md border-y-[1px]'} flex w-full justify-between items-center hover:border-[#323334] border-x-[1px]  p-2`}>
         <div>
           <IonMdHome />
           <span className="text-sm ml-2 align-middle">
@@ -34,11 +34,11 @@ function CommunityFilter () {
 
 function CommunitiesList (props: {isFocus: boolean}) {
   return (
-    <div className={`${props.isFocus && 'h-auto border-[#595b5e]'} flex flex-col w-full bg-[#1a1a1b] border-[1px] rounded-b-md border-transparent h-0 overflow-hidden absolute left-0`}>
+    <div className={`${props.isFocus ? 'h-auto border-[#323334] border-t-transparent' : 'border-transparent'} flex flex-col w-full bg-[#1a1a1b] border-[1px] rounded-b-md h-0 overflow-hidden absolute left-0`}>
       <CommunityFilter />
       <span className="my-4 pl-4 text-[#818384]">Your communities</span>
       <CreateCommunityButton />
-      <ul>
+      <ul className="pb-4">
         <CommunityLink img_src={CommunityImagePlaceholder} community_name="feedthebeast"/>
       </ul>
     </div>
@@ -57,9 +57,9 @@ function CreateCommunityButton () {
 function CommunityLink (props: { community_name: string, img_src: StaticImageData | string}) { // WIP
   return (
     <li>
-      <a className="py-2 px-4 hover:bg-[#232324] block">
+      <a className="py-2 px-4 hover:bg-[#232324] block center">
         <Image className="w-6 h-auto rounded-full inline mr-2" src={props.img_src} alt={"Community image"}></Image>
-        {props.community_name}
+        <span>{props.community_name}</span>
       </a>
     </li>
   )
