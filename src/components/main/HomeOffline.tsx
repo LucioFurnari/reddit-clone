@@ -3,10 +3,10 @@ import MainSection from "./MainSection"
 
 function HomeOffline () {
   return (
-    <div className=" flex">
+    <main className="grid grid-cols-6 pt-12">
       <HomeAside />
       <MainSection />
-    </div>  
+    </main>  
   )
 }
 
