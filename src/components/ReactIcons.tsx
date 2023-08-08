@@ -73,3 +73,15 @@ export function IcRoundKeyboardArrowDown(props: SVGProps<SVGSVGElement>) {
     <svg className="w-6 h-auto ml-auto" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"></path></svg>
   )
 }
+
+export function LucideCakeSlice(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className=" w-6 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><circle cx="9" cy="7" r="2"></circle><path d="M7.2 7.9L3 11v9c0 .6.4 1 1 1h16c.6 0 1-.4 1-1v-9c0-2-3-6-7-8l-3.6 2.6M16 13H3m13 4H3"></path></g></svg>
+  )
+}
+
+export function MaterialSymbolsTableRows(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M21 21H3v-4.65h18V21Zm0-6.65H3V9.625h18v4.725Zm0-6.725H3V3h18v4.625Z"></path></svg>
+  )
+}
