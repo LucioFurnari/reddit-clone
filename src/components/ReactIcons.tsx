@@ -85,3 +85,27 @@ export function MaterialSymbolsTableRows(props: SVGProps<SVGSVGElement>) {
     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M21 21H3v-4.65h18V21Zm0-6.65H3V9.625h18v4.725Zm0-6.725H3V3h18v4.625Z"></path></svg>
   )
 }
+
+export function IonChatboxOutline(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className="w-5 h-auto inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}><path fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="32" d="M408 64H104a56.16 56.16 0 0 0-56 56v192a56.16 56.16 0 0 0 56 56h40v80l93.72-78.14a8 8 0 0 1 5.13-1.86H408a56.16 56.16 0 0 0 56-56V120a56.16 56.16 0 0 0-56-56Z"></path></svg>
+  )
+}
+
+export function MdiArrowUpBoldOutline(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className="group-hover:fill-[#d93a00] fill-[#6d6e6f]"  xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="auto" viewBox="0 0 24 24" {...props}><path d="M16 13v8H8v-8H2L12 3l10 10h-6m-9-2h3v8h4v-8h3l-5-5l-5 5Z"></path></svg>
+  )
+}
+
+export function MdiArrowDownBoldOutline(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className="group-hover:fill-[#6a5cff] fill-[#6d6e6f]" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="auto" viewBox="0 0 24 24" {...props}><path d="M22 11L12 21L2 11h6V3h8v8h6m-10 7l5-5h-3V5h-4v8H7l5 5Z"></path></svg>
+  )
+}
+
+export function MdiCommentOutline(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className="inline mr-2 fill-[#6d6e6f]" xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="auto" viewBox="0 0 24 24" {...props}><path d="M9 22a1 1 0 0 1-1-1v-3H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6.1l-3.7 3.71c-.2.19-.45.29-.7.29H9m1-6v3.08L13.08 16H20V4H4v12h6Z"></path></svg>
+  )
+}
