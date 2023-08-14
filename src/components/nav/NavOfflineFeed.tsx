@@ -13,8 +13,8 @@ function UserMenuOffline () {
 
 function NavOfflineFeed () {
   return (
-    <div className="flex justify-end items-center relative">
-      <button className="bg-[#ff4500] hover:bg-[#ff5415] text-[#ffffff] px-10 py-1 text-center  rounded-full font-semibold">Log In</button>
+    <div className="flex justify-end items-center relative md:col-start-5 md:col-end-7">
+      <button className="bg-[#ff4500] hover:bg-[#ff5415] text-[#ffffff] px-10 py-1 text-center  rounded-full font-semibold hidden lg:block">Log In</button>
       <button className="flex items-center ml-5 py-1 px-2 rounded-md border-[1px] border-transparent hover:border-[#323334] peer">
           <ClarityUserLine />
           <IcBaselineKeyboardArrowDown />
