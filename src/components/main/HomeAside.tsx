@@ -5,7 +5,7 @@ import Image from "next/image"
 
 function HomeAside () {
   return (
-    <aside className="w-[270px] bg-[#1a1a1b] min-h-[calc(100vh-52px)] fixed flex flex-col justify-between px-4">
+    <aside className="hidden w-[270px] bg-[#1a1a1b] min-h-[calc(100vh-52px)] fixed top-[50px] xl:flex flex-col justify-between px-4">
       <div>
         <ul className="py-4 ">
           <h3 className="pl-2 mb-2 text-xs">FEEDS</h3>
