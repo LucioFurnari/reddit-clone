@@ -1,11 +1,11 @@
 import HomeAside from "./HomeAside"
-import MainSection from "./MainSection"
+import PostContainer from "../post/PostContainer"
 
 function HomeOffline () {
   return (
-    <main className="grid grid-cols-1 px-4 lg:px-0 lg:grid-cols-4 xl:grid-cols-6 pt-12">
+    <main className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 pt-32 lg:pt-20">
       <HomeAside />
-      <MainSection />
+      <PostContainer />
     </main>  
   )
 }

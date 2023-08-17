@@ -1,16 +1,9 @@
-import MainSection from "./MainSection"
-import PostCard from "./PostCard"
-import PlaceHolderImage from "@/images/placeholder_post_image.jpg"
+import PostContainer from "../post/PostContainer"
 
 function HomeOnline () {
   return (
-    <main className="grid grid-cols-6 pt-20 gap-x-4">
-      <div className="grid grid-cols-1 col-start-3 col-end-5 gap-4 ">
-      <PostCard votes={27} community="Cakes" user="CakeUser" time_passed={2} title="Look this cake!" content={PlaceHolderImage}/>
-      <PostCard votes={27} community="Cakes" user="CakeUser" time_passed={2} title="Look this cake!" content={PlaceHolderImage}/>
-      <PostCard votes={27} community="Cakes" user="CakeUser" time_passed={2} title="Look this cake!" content={PlaceHolderImage}/>
-      <PostCard votes={27} community="Cakes" user="CakeUser" time_passed={2} title="Look this cake!" content={PlaceHolderImage}/>
-      </div>
+    <main className="grid grid-cols-1  md:grid-cols-[1fr_1fr_1fr_300px_1fr] pt-32 lg:pt-20 gap-x-4">
+      <PostContainer />
       <Aside />
     </main>  
   )
@@ -20,7 +13,7 @@ export default HomeOnline
 
 function Aside () {
   return (
-    <aside className="rounded-md border-[1px] border-[#343536] bg-[#1a1a1b] h-max">
+    <aside className="hidden md:block rounded-md border-[1px] border-[#343536] bg-[#1a1a1b] h-max">
       <div className={`aside_bg w-full h-12 bg-no-repeat bg-contain `}></div>
       <div className="px-2 pb-2">
         <h3 className="mb-2">Home</h3>
