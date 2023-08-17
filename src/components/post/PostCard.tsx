@@ -10,7 +10,7 @@ const imageStyle = {
 
 function PostCard (props: { votes: number, community: string, user: string, time_passed: number, title: string, content: string | StaticImageData }) {
   return (
-    <section className="flex bg-[#1a1a1b] rounded-md border-[1px] border-[#343536] hover:border-gray-400 ">
+    <article className="flex bg-[#1a1a1b] md:rounded-md border-[1px] border-[#343536] hover:border-gray-400 ">
       <VotesCount votes={0} />
       <div className="flex flex-col pt-2 rounded-r-md w-full">
         <div className="px-2">
@@ -32,7 +32,7 @@ function PostCard (props: { votes: number, community: string, user: string, time
           </button>
         </div>
       </div>
-    </section>
+    </article>
   )
 }
 
