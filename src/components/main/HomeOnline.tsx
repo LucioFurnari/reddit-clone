@@ -1,26 +1,15 @@
 import PostContainer from "../post/PostContainer"
+import AsideHomeOnline from "./AsideHomeOnline"
 
 function HomeOnline () {
   return (
-    <main className="grid grid-cols-1  md:grid-cols-[1fr_1fr_1fr_300px_1fr] pt-32 lg:pt-20 gap-x-4">
-      <PostContainer />
-      <Aside />
+    <main className="grid grid-cols-1  md:grid-cols-[1fr_1fr_1fr_200px_1fr] xl:grid-cols-[1fr_1fr_1fr_1fr_300px_1fr] pt-32 lg:pt-20 gap-x-4">
+      <div className=" col-start-1  md:col-start-1 md:col-end-4 lg:col-start-1 lg:col-end-4 xl:col-start-2 xl:col-end-5">
+        <PostContainer />
+      </div>
+      <AsideHomeOnline />
     </main>  
   )
 }
 
 export default HomeOnline
-
-function Aside () {
-  return (
-    <aside className="hidden md:block rounded-md border-[1px] border-[#343536] bg-[#1a1a1b] h-max">
-      <div className={`aside_bg w-full h-12 bg-no-repeat bg-contain `}></div>
-      <div className="px-2 pb-2">
-        <h3 className="mb-2">Home</h3>
-        <p className="pb-2 mb-4 border-b-[1px] border-[#343536] text-sm">Your personal Reddit frontpage. Come here to check in with your favorite communities</p>
-        <button className="block bg-white hover:bg-[#d7dadc] text-black font-semibold w-full rounded-full py-2 mt-2">Create Post</button>
-        <button className="block text-white hover:bg-[#212122] font-semibold w-full border-[1px] rounded-full py-2 mt-2">Create Community</button>
-      </div>
-    </aside>
-  )
-}
