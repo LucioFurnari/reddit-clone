@@ -3,7 +3,7 @@ import { LucideCakeSlice } from "../ReactIcons";
 
 function CommunityAside () {
   return (
-    <aside className="hidden md:col-start-5 md:col-end-7 lg:col-start-6 lg:col-end-7 md:block bg-[var(--bg-dark-gray)] p-4 border-[1px] border-[var(--border-gray)] rounded">
+    <aside className="hidden md:col-start-4 md:col-end-6 md:ml-4 lg:ml-0 lg:col-start-6 lg:col-end-8 xl:col-start-6 xl:col-end-7 md:block h-max bg-[var(--bg-dark-gray)] p-4 border-[1px] border-[var(--border-gray)] rounded">
       <h2 className="text-[var(--text-gray)] mb-4">About Community</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem obcaecati beatae eligendi cupiditate inventore ipsum voluptas quo ab perspiciatis nulla vitae enim atque, quia cumque magnam. Sapiente, laudantium mollitia.</p>
       <div className="flex items-center my-4">
