@@ -1,7 +1,7 @@
 
 function CommentSection () {
   return (
-    <article className="col-start-3 col-end-6 bg-[var(--bg-dark-gray)] mt-4">
+    <article className=" bg-[var(--bg-dark-gray)] mt-4 md:col-start-2 md:col-end-4">
       <fieldset className="p-4">
         <p className="mb-2">Comment as User</p>
         <form className="flex flex-col">

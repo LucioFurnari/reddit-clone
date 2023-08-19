@@ -5,7 +5,7 @@ import VotesCount from "./VotesCount";
 
 function PostPageTemplate (props: {community: string, communityImage: string,  postTitle: string, postedBy: string, totalComments: number, date: number, content: string, comments: object}) {
   return (
-    <article className="bg-[var(--bg-dark-gray)] col-start-3 col-end-6 flex ">
+    <article className="bg-[var(--bg-dark-gray)] flex col-start-1 md:col-start-2 md:col-end-4 ">
       <VotesCount votes={0} />
       <div className="py-2 px-2">
         <Image className="w-6 h-auto inline" src={props.communityImage || CommunityImagePlaceholder} alt={props.community || "Community image"} />
