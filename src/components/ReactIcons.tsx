@@ -109,3 +109,9 @@ export function MdiCommentOutline(props: SVGProps<SVGSVGElement>) {
     <svg className="inline mr-2 fill-[#6d6e6f]" xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="auto" viewBox="0 0 24 24" {...props}><path d="M9 22a1 1 0 0 1-1-1v-3H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6.1l-3.7 3.71c-.2.19-.45.29-.7.29H9m1-6v3.08L13.08 16H20V4H4v12h6Z"></path></svg>
   )
 }
+
+export function MdiClose(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg className="fill-black h-auto w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}><path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"></path></svg>
+  )
+}
